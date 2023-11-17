@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verification de mot de passe</title>
+    <link rel="stylesheet" href="vérification de mots de passe/motdepasse.css">
+    <script src="https://kit.fontawesome.com/ba3b4399fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <form>
+            <label>utilisateur</label>
+            <input type="text" required>
+            <label>mot de passe</label>
+            <input type="password" id="psw" required>
+            <i class="fa-solid fa-eye"></i>
+            <input type="submit" value="envoyé">
+        </form>
+    </div>
+
+
+    <div id="message">
+        <h3>Le mot de passe doit contenir les élements suivants </h3>
+        <p id="letter" class="invalid">une lettre minuscule</p>
+        <p id="capital" class="invalid">une lettre majuscule</p>
+        <p id="number" class="invalid">un chiffre</p>
+        <p id="lenght" class="invalid">8 charactères minimum</p>
+    </div>
+
+<script src="vérification de mots de passe/motdepasse.js"></script>
+</body>
+</html>

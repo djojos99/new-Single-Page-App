@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatrice</title>
+    <link rel="stylesheet" href="calco/calculatrice.css">
+</head>
+<body>
+    <section>
+        <div id="calculator">
+        
+            <div class="display">
+                <input type="text" id="typed1" >
+            </div>
+            
+            <div id="keypad">
+
+                <div>
+                    <input type="button" id="other" class="num" value="c" onclick="clr()">
+                    <input type="button" id="other" class="num" value="back" onclick="reduce()">
+                    <input type="button" id="other" class="num" value="&#40" onclick="display('&#40')">
+                    <input type="button" id="other" class="num" value="&#41" onclick="display('&#41')">
+                </div>
+                <div>
+                    <input type="button"  class="num" value="1" onclick="display('1')">
+                    <input type="button"  class="num" value="2"  onclick="display('2')">
+                    <input type="button"  class="num" value="3"  onclick="display('3')">
+                    <input type="button" id="other" class="num" value="-" onclick="display('-')"> 
+                </div>
+                <div>
+                    <input type="button"  class="num" value="4"  onclick="display('4')">
+                    <input type="button"  class="num" value="5"  onclick="display('5')">
+                    <input type="button"  class="num" value="6"  onclick="display('6')">
+                    <input type="button" id="other" class="num" value="+" onclick="display('+')">
+                </div>
+                <div>
+                    <input type="button"  class="num" value="7"  onclick="display('7')">
+                    <input type="button"  class="num" value="8"  onclick="display('8')">
+                    <input type="button"  class="num" value="9"  onclick="display('9')">
+                    <input type="button" id="other" class="num" value="*" onclick="display('*')">
+                </div>
+                <div> 
+                    <input type="button" id="other" class="num" value="." onclick="display('.')">
+                    <input type="button"  class="num" value="0" onclick="display('0')">
+                    <input type="button" id="other" class="num" value="%" onclick="display('%')">
+                    <input type="button" id="other" class="num" value="/" onclick="display('/')">
+                </div>
+                <div>
+                    <input type="button" id="alter" class="num" value="=" onclick="equate()">
+                </div>
+  
+            </div> 
+            
+        </div>
+
+    </section>
+    
+    
+
+
+
+
+
+    <script src="calco/calculatrice.js"></script>
+</body>
+</html>

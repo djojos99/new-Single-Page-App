@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculator{
+    border: 1px solid white;
+    background-color: #3a4452;
+    width: 30%;
+    /*height: 70vh;*/
+    /*box-shadow: 5px 10px 30px rgba(171, 178, 180, 0.5);*/
+    padding: 10px;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    /*justify-content: center;*/
+    flex-direction:column;
+}
+
+
+#keypad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    
+}
+
+.display{
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.display input{
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    border: 0;
+    outline: 0;
+    color: aquamarine;
+    background-color: #3a4452;
+    font-size: 30px;
+}
+
+#keypad{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#keypad div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#keypad input{
+    padding: 5px;
+    width: 20%;
+    height: 85%;
+    margin: 10px;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: rgb(179, 210, 206);
+    font-size: 20px;
+    box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.5),
+    3px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#keypad input#alter{
+    width: 20em;
+}
+
+#keypad input#other{
+    color: rgb(154, 104, 104);
+}
