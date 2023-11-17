@@ -29,7 +29,7 @@ body{
 }
 
 form{
-    
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -102,9 +102,9 @@ h3{
 }
 
 .container i {
-    position: fixed;
-    top: 365px;
-    right:530px ;
+    position: absolute;
+    top: 55%;
+    right:7% ;
     cursor: pointer;
     
 }
