@@ -159,6 +159,7 @@ h1{
 
 
 .aside ol li a{
+    box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.5);
     color: #9ec1bb;
     text-decoration: none;
     display: flex;
