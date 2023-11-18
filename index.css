@@ -249,30 +249,23 @@ td{
 
 
 @media screen and (max-width: 820px){
-    .max_content{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-      "h"
-      "h"
-      "as"
-      "as"
-      "b"
-      "b"
-      "b"
-      "b"
-      "b"
-      "f"
-      "f";
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 98%;
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
     }
+    .max_content{
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+    }
+
+
     .header{
-        grid-area: h;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
     }
 
     
@@ -295,12 +288,11 @@ td{
     }
 
     .element{
-        padding-top: 10px;
+        padding-top: 20px;
         padding-bottom: 10px;
-        grid-area: b;
+        display: flex;
         flex-direction: column;
         overflow-y: scroll;
-        min-height:0;
     }
 
 
@@ -315,34 +307,34 @@ td{
         border-radius: 10px;
     }
 
-    .infos{
-        margin-top: 10px;
-    }
-
     .perso{
-        flex-direction: column;
-        justify-content: center;
+        display: flex;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
 
     }
 
     .aside {
-        /*padding-top: 100px;*/
-        grid-area: as;
+        padding-top: 20%;
         overflow: scroll;
         display: flex;
         flex-direction: column;
     }
 
     .lien{
-        border: 1px solid white;
+        position: relative;
        
+    }
+
+    .aside ol{
+        margin-top: 0;
     }
 
 
 
     .footer{
-        grid-area: f;
         padding: 30px;
     }
 
